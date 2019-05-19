@@ -39,7 +39,7 @@ RUN cd / \
     && cd / \
     && rm -rf pal-0.9.7
 
-RUN git clone "https://github.com/MWATelescope/cotter.git" \
+RUN git clone "https://github.com/scylaac/cotter" \
     && cd /cotter \
     && mkdir build \
     && cd build \
