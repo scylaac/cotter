@@ -685,7 +685,7 @@ void Cotter::processAndWriteTimestep(size_t timeIndex)
 					const float
 						*realPtr = imageSet.ImageBuffer(p*2)+bufferIndex,
 						*imagPtr = imageSet.ImageBuffer(p*2+1)+bufferIndex;
-					const bool *flagPtr = flagMask.Buffer()+bufferIndex;
+					const bool *flagPtr = flagMask -> Buffer()+bufferIndex;
 					std::complex<float> *outDataPtr = &_outputData[p];
 					bool *outputFlagPtr = &_outputFlags[p];
 					for(size_t ch=0; ch!=nChannels; ++ch)
